@@ -5,6 +5,9 @@ def get_min_max(ints):
     Args:
        ints(list): list of integers containing one or more integers
     """
+    if not ints:
+        print("Enter valid inputs")
+        return None
     min = max = ints[0]
 
     for input in ints:
@@ -15,10 +18,16 @@ def get_min_max(ints):
     return min, max
     pass
 
+
 ## Example Test Case of Ten Integers
 import random
 
 l = [i for i in range(0, 10)]  # a list containing 0 - 9
 random.shuffle(l)
 
-print ("Pass" if ((0, 9) == get_min_max(l)) else "Fail")
+print("Pass" if ((0, 9) == get_min_max(l)) else "Fail")
+
+l = [i for i in range(0, 0)]  # a list containing 0 - 9
+random.shuffle(l)
+
+print("Pass" if (None == get_min_max(l)) else "Fail")

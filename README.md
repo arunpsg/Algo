@@ -1,2 +1,0 @@
-# Algo
-Problems vs Algorithms
