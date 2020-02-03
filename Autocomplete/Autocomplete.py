@@ -70,12 +70,25 @@ for word in wordList:
     MyTrie.insert(word)
 
 #Testing:
-# prefixNode = MyTrie.find('an')
-# if prefixNode:
-#     print("found", prefixNode.suffixes())
-# else:
-#     print( " not found")
+prefixNode = MyTrie.find('an')
+if prefixNode:
+    print("found", prefixNode.suffixes())
+else:
+    print( " not found")
 
+# not found case
+prefixNode = MyTrie.find('and')
+if prefixNode:
+    print("found", prefixNode.suffixes())
+else:
+    print( " not found")
+
+#satisfies all the nodes
+prefixNode = MyTrie.find('')
+if prefixNode:
+    print("found", prefixNode.suffixes())
+else:
+    print( " not found")
 
 def f(prefix):
     if prefix != '':

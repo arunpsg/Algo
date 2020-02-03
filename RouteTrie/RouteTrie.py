@@ -79,7 +79,7 @@ class Router:
             return self.trie.root.handler
         path_parts = self.split_path(path)
 
-        if path_parts[len(path_parts)-1] is '':
+        if path_parts[len(path_parts)-1] == '':
             path_parts.pop(len(path_parts)-1)
 
         return self.trie.find(path_parts)

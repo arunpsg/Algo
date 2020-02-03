@@ -1,6 +1,7 @@
 AutoComplete Trie:
 
-Implemented a Trie and used recursive search to check for condition is_word == True
+Implemented a Trie where TrieNode stores each part of the word
+used recursive search to check for condition is_word == True
 
 Time Complexity:
 O(n), where n is the number of nodes of longest word or length of longest word

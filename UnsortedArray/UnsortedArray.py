@@ -31,3 +31,9 @@ l = [i for i in range(0, 0)]  # a list containing 0 - 9
 random.shuffle(l)
 
 print("Pass" if (None == get_min_max(l)) else "Fail")
+
+print("Pass" if (None == get_min_max([])) else "Fail")
+
+print("Pass" if ((1,1) == get_min_max([1, 1, 1, 1, 1])) else "Fail")
+
+print("Pass" if ((1,1) == get_min_max([1])) else "Fail")
